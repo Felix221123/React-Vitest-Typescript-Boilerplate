@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "css": "npx tailwindcss -i ./src/index.css -o ./public/output.css --watch",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "cy:open": "cypress open"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -26,6 +27,7 @@
     "@vitejs/plugin-react": "^4.3.1",
     "@vitest/ui": "^1.6.0",
     "autoprefixer": "^10.4.19",
+    "cypress": "^13.13.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
