@@ -1,0 +1,19 @@
+name: Run tests
+
+description: Run project's unit tests using Jest Node testing framework
+
+runs:
+  using: "composite"
+  steps:
+    - name: Run unit tests using vitest framework
+      shell: bash
+      run: npm run test
+
+    - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm run preview
+          wait-on: 'http://localhost:4173'
+          wait-on-timeout: 60
+          browser: chrome
