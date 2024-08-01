@@ -14,16 +14,16 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    "@typescript-eslint/no-namespace": "off",
-    "unused-imports/no-unused-imports-ts": "off",
-    "@typescript-eslint/no-unused-vars": "off",
-    "unused-imports/no-unused-vars": [
+    '@typescript-eslint/no-namespace': 'off',
+    'unused-imports/no-unused-imports-ts': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'unused-imports/no-unused-vars': [
       0,
       {
-        "varsIgnorePattern": "^_",
-        "args": "after-used",
-        "argsIgnorePattern": "^_",
+        varsIgnorePattern: '^_',
+        args: 'after-used',
+        argsIgnorePattern: '^_',
       },
-    ]
+    ],
   },
 }
