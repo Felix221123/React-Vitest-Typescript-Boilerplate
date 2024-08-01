@@ -70,7 +70,7 @@ jobs:
       - name: Install Node modules
         uses: ./.github/actions/install-node-modules
 
-      - name: Run tests (Jest) NodeJs Backend(expressjs)
+      - name: Run tests using the vitest framework 
         uses: ./.github/actions/run-tests
 
   build:
